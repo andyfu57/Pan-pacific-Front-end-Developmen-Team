@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andyfxz.colorful_player"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+       />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true" />
+
+    <application
+        android:name="com.andyfxz.FlagS.FlagS"
+        android:icon="@drawable/icon_coolplayer"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.andyfxz.Cool_Player.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andyfxz.Cool_Player.TabHostActivity"
+            android:launchMode="singleTask"
+          
+           >
+        </activity>
+        <activity
+            android:name="com.andyfxz.Cool_Player.MainPlaying"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity android:name="com.andyfxz.Cool_Player.SongActivity" >
+        </activity>
+        <activity android:name="com.andyfxz.SongInfo.SongInfoMylist" >
+        </activity>
+        <activity android:name="com.andyfxz.SongInfo.SongInfoSinger" >
+        </activity>
+        <activity android:name="com.andyfxz.SongInfo.SongInfoSong" >
+        </activity>
+        <activity android:name="com.andyfxz.SongInfo.ArtistList" >
+        </activity>
+        <activity android:name="com.andyfxz.SongInfo.MyCollection" >
+        </activity>
+
+        <receiver android:name="com.andyfxz.MediaResource.DeleteScanReceiver" >
+        </receiver>
+        <receiver android:name="com.andyfxz.MediaResource.ScanSDcardReciever" >
+        </receiver>
+        <receiver android:name="com.andyfxz.Cool_Player.MusicWidget" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidgetprovider" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.andyfxz.message" >
+                </action>
+                <action android:name="com.andyfxz.isplaying" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.andyfxz.MusicService.MediaService"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.andyfxz.Cool_Player.VideoPlayActivity"
+          android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" >
+             <!--  
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="file" />
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="file" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
