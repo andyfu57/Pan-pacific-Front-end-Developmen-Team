@@ -1,0 +1,66 @@
+body {
+	margin: 0 0;
+	padding: 0 auto;
+	background-color: #eee;
+}
+
+.container {
+	
+}
+
+.main_body {
+	width: 100%;
+	height: auto;
+	background-color: #eee;
+	float: left;
+	/*padding-left: 200px;
+	padding-right: 120px;*/
+}
+
+.inner {
+	margin-left: 230px;
+	margin-right: 160px;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+
+.self_data {
+	float: left;
+	width: 200px;
+	background-color: brown;
+	margin-left: -99%;
+	border: 1px solid #999;
+	/*position: relative;
+	left: -200px;*/
+}
+
+.self_data img {
+	width: 100px;
+	height: 100px;
+	padding: 10px 10px;
+	float: left;
+}
+
+.self_data p {
+	right: 0px;
+	top: 0;
+	font-size: large;
+	font-family: "microsoft yahei" float: left;
+}
+
+.privatelogo {
+	float: left;
+	margin-left: -140px;
+	width: 120px;
+	height: auto;
+	background-color: brown;
+	border: 1px solid #999;
+	/*position: relative;
+	right: 120px;*/
+}
+
+.privatelogo img {
+	width: 80px;
+	height: 80px;
+	margin: 5px 20px;
+}

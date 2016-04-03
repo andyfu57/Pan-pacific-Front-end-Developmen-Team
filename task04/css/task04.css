@@ -1,0 +1,30 @@
+.backg {
+	width: 400px;
+	height: 200px;
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+	
+}
+
+.round_1 {
+	width: 50px;
+	height: 50px;
+	background-color:#FC0;
+	float: left;
+	border-bottom-right-radius: 200px;
+	
+}
+.round_2 {
+	width: 50px;
+	height: 50px;
+	background-color:#FC0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-top-left-radius: 200px;
+	
+}

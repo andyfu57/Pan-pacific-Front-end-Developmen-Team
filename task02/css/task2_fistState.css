@@ -1,0 +1,142 @@
+body {
+	margin: 0;
+	padding: 0 auto;
+	background-color: #DEDEDE;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #333333;
+		vertical-align: middle;
+}
+
+.head_img {
+	width: 60px;
+	height: 100%;
+}
+
+.baidu_icon {
+	height: 70%;
+	width: auto;
+	margin: 10px 30px;
+	
+
+}
+
+.nav_ul {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 0 30px;
+}
+
+.nav_ul li {
+	display: inline-block;
+}
+
+.nav_ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 13px;
+	margin-left: 1.5em;
+}
+
+.fist_section {
+	padding: 15px 15px;
+	border: 1px solid #cEcEcE;
+	margin: 2% 4%;
+	background-color: #fff;
+	box-shadow: 2px 2px 1px #808080;
+	border-radius: 2px;
+	position: relative;
+}
+
+dd div img {
+	width: 250px;
+	height: 170px;
+}
+
+dd div {
+	border: 1px solid #cEcEcE;
+	width: 250px;
+	height: auto;
+	margin: 5px;
+	padding: 5px 5px;
+}
+
+ol {
+	font-family: "黑体";
+	font-weight: bold;
+}
+
+.table_1 tr th {
+	background-color: #333333;
+	color: #FFFFFF;
+	font-family: "黑体";
+}
+
+.table_1 {
+	background-color: gainsboro;
+}
+
+.table_1 tr td {
+	background-color: #fff;
+}
+
+.table_1 tr:last-child td {
+	background-color: gainsboro;
+}
+
+.footer1 {
+	background-color: #000;
+	color: #FFFFFF;
+	width: 100%;
+	height: 75px;
+	text-align: center;
+
+
+}
+.footer1 p{
+	padding: 25px 0;
+}
+
+.submit_ {
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #3355D0;
+	font-family: "黑体";
+	font-size: 20px;
+	color: #fff;
+	margin-top: 400px;
+}
+
+.celan_1 {
+	font-family: "黑体";
+	float: left;
+	width: 44%;
+	position: absolute;
+	text-align: right;
+}
+
+.celan_1 .text_1 {
+	font-size: 50px;
+	color: #808080;
+}
+
+.celan_2 {
+	font-family: "黑体";
+	float: left;
+	width: 54%;
+	right: 0;
+	position: absolute;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.
