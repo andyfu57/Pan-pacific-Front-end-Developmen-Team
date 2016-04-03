@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox 布局练习</title>
+    <style type="text/css">
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .container_item_1{
+            border: 1px red solid;
+            padding: 20px;
+            width: 150px;
+            height: 120px;
+            flex: 0 0 150px;
+        }
+        .container_item_2{
+            border: 1px red solid;
+            padding: 20px;
+            width: 150px;
+            height: 100px;
+            flex: 0 0 150px;
+        }
+        .container_item_3{
+            border: 1px red solid;
+            padding: 20px;
+            width: 150px;
+            height: 40px;
+            flex: 0 0 150px;
+        }
+        .container_item_4{
+            border: 1px blue solid;
+            padding: 20px;
+            width: 150px;
+            height: 200px;
+            flex: 0 0 150px;
+        }
+        @media screen and (max-width: 640px) {
+            .container_item_4{order:-1;}
+            .container{
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="container_item_1">120*150</div>
+    <div class="container_item_2">100*150</div>
+    <div class="container_item_3">40*150</div>
+    <div class="container_item_4">200*150</div>
+</div>
+</body>
+</html>
